@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ColorSquare from '../presentation/ColorSquare';
 
 export default class RandomColor extends Component {
     state = {
@@ -20,7 +21,7 @@ export default class RandomColor extends Component {
     render() {
         return (
             <div>
-                
+                <ColorSquare backgroundColor={this.state.currentColor} />
             </div>
         )
     }

@@ -1,11 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ColorSquare = ({ backgroundColor, image }) => {
+const ColorSquare = ({ backgroundColor }) => {
     return (
         <div style={{
             backgroundColor: backgroundColor,
-        }}>
+            width: '1000px',
+            height: '1000px'
+        }}>           
         </div>
     )
 }
