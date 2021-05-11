@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ColorSquare = ({ backgroundColor }) => {
+const ColorSquare = ({ backgroundColor, backgroundImage }) => {
     return (
         <div style={{
+            backgroundImage: backgroundImage,
             backgroundColor: backgroundColor,
-            width: '1000px',
-            height: '1000px'
+            width: '800px',
+            height: '800px',
         }}>           
         </div>
     )
@@ -14,6 +15,7 @@ const ColorSquare = ({ backgroundColor }) => {
 
 ColorSquare.propTypes = {
     backgroundColor: PropTypes.string.isRequired,
+    backgroundImage: PropTypes.string.isRequired,
 }
 
 export default ColorSquare;
