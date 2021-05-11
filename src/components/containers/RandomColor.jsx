@@ -5,12 +5,11 @@ export default class RandomColor extends Component {
     state = {
         colorArray: ['#404e5c', '#4f6272', '#b7c3f3', '#dd7596', '#cf1259'],
         currentColor: '',
-        previousColor: '',
         backgroundImage: 'none',
     };
+    
     colorChange = () => {
         const randomNumber = Math.floor(Math.random() * 5);
-        console.log(this.state.colorArray[randomNumber], this.state.currentColor)
         if (this.state.colorArray[randomNumber] === this.state.currentColor) {
             this.setState({
                 backgroundImage:
@@ -25,7 +24,7 @@ export default class RandomColor extends Component {
         }
     };
     componentDidMount() {
-        const colorTimer = setInterval(this.colorChange, 1000);
+        setInterval(this.colorChange, 1000);
     }
 
     render() {
