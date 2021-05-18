@@ -2,8 +2,10 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <div>
+    <div
+      style="background-image: none; background-position: center; background-repeat: no-repeat; background-size: cover; width: 800px; height: 800px;"
+    />
+  </div>
 </DocumentFragment>
 `;
